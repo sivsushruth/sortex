@@ -1,5 +1,4 @@
 defmodule Sortex.Rules do
-
   defmacro __using__(_opts) do
     quote do
       import Sortex.Rules
@@ -12,5 +11,4 @@ defmodule Sortex.Rules do
       def unquote(function_name)(args), do: {args, unquote(block)}
     end
   end
-
 end

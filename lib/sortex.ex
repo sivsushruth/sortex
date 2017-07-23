@@ -3,6 +3,9 @@ defmodule Sortex do
     quote do
       use Sortex.Rules
       import Sortex
+      def sort(args) do
+        Sortex.sort(args)
+      end
     end
   end
 
